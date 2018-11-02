@@ -1,0 +1,27 @@
+{
+  "name": "blog-api",
+  "version": "1.0.0",
+  "description": "basic blog api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/race-briggs/blog-api.git"
+  },
+  "keywords": [
+    "blog",
+    "api",
+    "thinkful"
+  ],
+  "author": "Race Briggs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/race-briggs/blog-api/issues"
+  },
+  "homepage": "https://github.com/race-briggs/blog-api#readme",
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
+}
