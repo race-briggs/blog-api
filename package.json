@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/race-briggs/blog-api#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "uuid": "^3.3.2"
   }
 }
