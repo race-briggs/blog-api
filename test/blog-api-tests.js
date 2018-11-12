@@ -25,7 +25,7 @@ describe("BlogPosts", function(){
 				expect(res).to.be.json;
 				expect(res.body).to.be.a('array');
 				expect(res.body.length).to.be.at.least(1);
-				const expectedKeys = ['title', 'content', 'author', 'publishDate'];
+				const expectedKeys = ['title', 'content', 'id', 'author', 'publishDate'];
 				res.body.forEach(function(item){
 					expect(item).to.be.a('object');
 					expect(item).to.have.keys(expectedKeys);
