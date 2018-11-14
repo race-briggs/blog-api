@@ -44,12 +44,11 @@ describe("BlogPosts", function(){
 			.send(newPost)
 			.then(function(res) {
 					expect(res).to.have.status(201);
-					expect(res).to.be.json;
 					expect(res).to.be.a('object');
-					expect(res).to.include.keys("id", "content", "title", "author", "publishDate");
+					expect(res.body).to.include.keys("id", "content", "title", "author", "publishDate");
 					expect(res.body.id).to.not.equal(null);
 					expect(res.body).to.deep.equal(
-						Object.assign(newItem, {id: res.body})
+						Object.assign(newPost, {id: res.body.id})
 					);
 			})
 			);

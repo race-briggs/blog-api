@@ -22,8 +22,9 @@ router.post('/', jsonParser, (req, res) => {
 			return res.status(400).send(message)
 		}
 	}
-	BlogPosts.create(req.body.title, req.body.content, req.body.author, req.body.publishDate)
-	res.status(201).send('Post Created');
+	const newBlogPost = BlogPosts.create(req.body.title, req.body.content, req.body.author, req.body.publishDate)
+
+	res.status(201).json(newBlogPost);
 });
 
 router.put('/:id', jsonParser, (req, res) => {
